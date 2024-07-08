@@ -40,8 +40,8 @@ console.log(calculatePowerAndSquareRoot(4, 3));
 // Task 5: Current Date and Time
 function getCurrentDateTime() {
     const newDate = new Date();
-    let currentDate = newDate.toISOString().slice(0, 10);
-    let currentTime = newDate.toTimeString();
+    let currentDate = date.toISOString().split('T')[0]; //[0] select the first element of the array[date part]
+    let currentTime = date.toTimeString().split(' ')[0].slice(0, 5);
   return {
   currentDate,  
   currentTime 
