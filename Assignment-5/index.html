@@ -60,6 +60,7 @@ let valueCounted = false;
 console.log(valueCounted);  // false
 
 5. BigInt is a type of number that can represent very large or very small integers beyond the range of the regular number data type
+
 let bigNumber = BigInt(101824702484802842848028402804820020420840840804);
 // console.log(bigNumber);
 
@@ -78,19 +79,19 @@ let capital = Symbol("Hyderabad");
 <!-- Non-primitive data types -->
 
 Array : is an object which can store multiple data or value under one variable name
-1st Way
-
-let randomArray = ["Harish", 100, true];
+1st way
+let randomArray = ["sarah", 100, true];
 console.log(randomArray[3]);
 console.log(randomArray.length);
 
-// 2nd Way
+//array constructor
  let newArray = new Array();
 
- newArray[0] = "Sitaram";
+ newArray[0] = "John";
  newArray[1] = 200;
  
 object - An Object holds data in the form of key-value pairs. For example,
+
 let student = {
    name: "Ajay",
    age: 25,
@@ -152,9 +153,8 @@ When we define a variable to undefined then we are trying to convey that the var
 
 
 <!-- Var  -->
- -Scope: var is function-scoped. If declared inside a function, it is accessible anywhere within that function. If    declared outside a function, it is globally scoped.
- -Behavior: Variables declared with var are hoisted to the top of their scope and initialized with undefined.
--var allows variable redeclaration and reassignment.
+ -Scope: var is function-scoped. If declared inside a function, it is accessible anywhere within that function. If declared outside a function, it is globally scoped.
+  -var allows variable redeclaration and reassignment.
 
 var declaration = initialization
  var myVariable = 100;
@@ -165,7 +165,6 @@ console.log(myNewVariable);
 
 <!-- let -->
 •  Scope: let is block-scoped. It is only accessible within the block (curly braces) where it is declared.
-•  Behavior: Variables declared with let are also hoisted but are not initialized, so they cannot be accessed before their declaration ("Temporal Dead Zone").
 •	let allows reassignment but does not allow redeclaration within the same scope.
 
 let newVar = 100;
@@ -173,7 +172,6 @@ let newVar = 100;
 
 <!-- const -->
 •	Scope: const is block-scoped, similar to let.
-•	Behavior:	Variables declared with const are hoisted but are not initialized.
  const does not allow reassignment or redeclaration within the same scope. It requires an initial value at the time of declaration.
 
  const variableNew = "newWord";
@@ -196,11 +194,10 @@ Here, we execute printHello before the line the function was declared. Before th
 
 <!-- Hoisting var variables -->
 
-console.log(newString);
-// var newString;
-// newString = "Hoisting"
+console.log(name);
+ var name = "Hoisting"
 
-Here, we declare a variable called name with a string value of "Dillion". But, we try to access the variable before the line it was declared. But we don't get any errors. Hoisting happened. The name declaration is hoisted to the top, so the interpreter "knows" that there is a variable called name. If the interpreter did not know, you would get name is not defined.
+Here, we declare a variable called name with a string value of "Hoisting". But, we try to access the variable before the line it was declared. But we don't get any errors. Hoisting happened. The name declaration is hoisted to the top, so the interpreter "knows" that there is a variable called name. If the interpreter did not know, you would get name is not defined.
 
 <!-- Hoisting let variables -->
 
@@ -238,10 +235,8 @@ Double equal to will check the values
 Strict equality compares two values for equality. Neither value is implicitly converted to some other value before being compared. If the values have different data types, the values are considered unequal. If the values have the same data type, are not numbers, and have the same value, they're considered equal.
 checks the value and the datatype
 
-// let num2 = 5 !== "5";
-// let num3 = 5 > 10;
-
-// console.log(num2); //false
+ let num2 = 5 !== "5";
+ console.log(num2); //false
 
 ---------------------------------------------------------------------------------------------------------------
 <!-- 8. Explain the difference between forEach, map, filter, and reduce -->
@@ -279,7 +274,9 @@ The filter() method of Array instances creates a shallow copy of a portion of a 
 Executes a reducer function (that you provide) on each element of the array, resulting in a single output value. A single value, which can be of any type (e.g., number, string, object, etc.).
 It is used when you need to accumulate values from an array into a single value, such as summing numbers, concatenating strings, or building an object.
 
-const numbers = [1, 2, 3, 4, 5]; const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0); console.log(sum);
+const numbers = [1, 2, 3, 4, 5]; 
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0); 
+console.log(sum);
 
 ----------------------------------------------------------------------------------------------------------------------
 
