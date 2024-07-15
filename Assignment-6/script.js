@@ -54,7 +54,7 @@ removed.remove();
     //    To change the content or edit them we can use replaceWith() method
      
 // 4. How do you delete elements from the DOM?
-    //  We use remove() method to remove the elements from the DOM
+    //  We use remove() method to remove the elements from the DOMs
 
 
 
