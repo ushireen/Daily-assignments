@@ -61,7 +61,7 @@ mainFunction(callbackFunction)
 //  ---Through this task, I've learned about the web apis which are setTimeout, setInterval, clearInterval ,these timing events are used to handle Asynchronous operations, without
 //     blocking the main execution.
 //  --- Callbacks are functions passed as arguments to other functions,they are invoked after the completion of a task, allowing for asynchronous programming.
-
+ 
 
 // 2. How do setTimeout and setInterval differ in their usage?
     //  --setTimeout is used  delay the execution of a function or perform an action once after a certain period.
