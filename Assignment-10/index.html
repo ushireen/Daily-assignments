@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" autocomplete="off"
+                    required>
+                <span class="error" id="userError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"
+                    autocomplete="off" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmpass">Confirm Password:</label>
+                <input type="password" id="confirmpass" name="confirmpass" placeholder="Enter your password"
+                    autocomplete="off" required>
+                <span class="error" id="confirmPassError"></span>
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="Enter your number"
+                    autocomplete="off" required>
+                <span class="error" id="numberError"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
